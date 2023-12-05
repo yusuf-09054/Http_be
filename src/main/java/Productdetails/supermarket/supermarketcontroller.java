@@ -1,13 +1,16 @@
 package Productdetails.supermarket;
 
+import org.hibernate.boot.jaxb.Origin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.lang.model.util.Elements;
 import java.util.List;
 import java.util.Optional;
 
 @RestController
 @RequestMapping("/supermarket")
+@CrossOrigin(origins = "http://localhost:3000")
 //  http://localhost:8081/supermarket
 
 public class supermarketcontroller
